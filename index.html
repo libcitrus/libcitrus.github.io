@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Chat, is this real?</title>
+<meta name="author" content="팀 ㅇㄱㅈㅉㅇㅇ?"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/theme/black.css" id="theme"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/highlight/zenburn.css"/>
+<style>
+.reveal { word-break: keep-all; }
+.reveal hgroup p { font-size: var(--r-heading3-size); }
+</style>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<hgroup><h1>Chat, is this real?</h1><p>Wake up babe, a universal livestream utility just dropped.</p></hgroup><p><a href="https://libcitrus.github.io/">https://libcitrus.github.io/</a>
+</section>
+<section>
+<section id="slide-org4e2680d">
+<h2 id="org4e2680d">인터넷 방송​<i>(livestreaming)</i>?</h2>
+<dl>
+<dt>인터넷 방송, <i>live streaming</i></dt><dd>스트리밍 기술을 이용하여 실시간 또는 준실시간으로 영상과 음성을 네트워크를 통해 전송하는 것.</dd>
+<dt>인터넷 방송인, <i>live streamer</i></dt><dd>실시간으로 시청자와 소통하며 인터넷 방송을 진행하는 사람.</dd>
+
+</dl>
+</section>
+<section id="slide-org6467acb">
+<h3 id="org6467acb">인터넷 방송 시장 규모</h3>
+
+<div id="org72065bd" class="figure">
+<p><img src="assets/livestreaming-market-share.png" alt="livestreaming-market-share.png" />
+</p>
+</div>
+</section>
+<section id="slide-org6f6d799">
+<h3 id="org6f6d799">플랫폼의 파편화 &#x2014; 현황</h3>
+
+<div id="orgb2ee347" class="figure">
+<p><img src="assets/livestreaming-platforms.png" alt="livestreaming-platforms.png" />
+</p>
+</div>
+</section>
+<section id="slide-org2468095">
+<h3 id="org2468095">플랫폼의 파편화 &#x2014; 대한민국의 경우</h3>
+<ul>
+<li>2010년, 아프리카TV의 등장으로 1인 인터넷 방송업 시작</li>
+<li>2017년, 아프리카TV 시청자 감소 및 Twitch의 한국 진출</li>
+<li>2023년, Twitch의 한국 사업부 철수로 치지직, 아프리카TV로 다시 시장 양분</li>
+
+</ul>
+</section>
+<section id="slide-orgf916938">
+<h3 id="orgf916938">인터넷 방송의 핵심, 실시간 소통</h3>
+<div style="display: flex;">
+<div style="flex: 1;">
+
+<div id="orgdf1987b" class="figure">
+<p><img src="assets/cult-of-the-lamb.png" alt="cult-of-the-lamb.png" />
+</p>
+</div>
+</div>
+
+<div style="flex: 1;">
+
+<div id="org6490682" class="figure">
+<p><img src="assets/Jackbox-party-party-quiplash.png" alt="Jackbox-party-party-quiplash.png" />
+</p>
+</div>
+</div>
+</div>
+
+<p class="fragment (appear)">
+대다수의 소통형 컨텐츠는 <b>Twitch만을</b> 지원함
+</p>
+
+<p class="fragment (appear)">
+플랫폼의 파편화는 곧 <b>API의 파편화</b>
+</p>
+</section>
+</section>
+<section>
+<section id="slide-org858667e">
+<h2 id="org858667e"><code>libcitrus</code>, the Universal Livestream Firehose</h2>
+<dl>
+<dt class="fragment appear">채팅</dt><dd class="fragment appear">모든 방송 플랫폼의 주요 소통 창구</dd>
+<dt class="fragment appear">후원</dt><dd class="fragment appear">인터넷 방송인이 현금화 가능한 재화를 보내는 것
+(예시: YouTube의 슈퍼챗, Twitch의 비트, 치지직의 치즈, SOOP의 별풍선)</dd>
+
+</dl>
+</section>
+<section>
+<dl>
+<dt>시청자</dt><dd>인터넷 방송을 스트리밍받는 사용자</dd>
+
+</dl>
+<dl>
+<dt class="fragment appear">관리자</dt><dd class="fragment appear">인터넷 방송 시청자를 관리할 수 있는 권한을 가진 시청자 (YouTube의 "렌치", Twitch의 "모더레이터")</dd>
+<dt class="fragment appear">팔로워</dt><dd class="fragment appear">방송 시작 알림을 수신하는 시청자 (YouTube의 "구독자", Twitch의 "팔로워")</dd>
+<dt class="fragment appear">구독자</dt><dd class="fragment appear">정기적으로 방송인을 후원하는 시청자 (YouTube의 "멤버십", Twitch의 "구독자")</dd>
+
+</dl>
+
+</section>
+<section>
+
+<p>
+스트리밍 플랫폼의 파편화된 API를 추상화하여 하나의 라이브러리로 제공하는 프로젝트.
+</p>
+
+<p>
+<a href="https://github.com/libcitrus/libcitrus">https://github.com/libcitrus/libcitrus</a>
+</p>
+</section>
+<section id="slide-org020f8fb">
+<h3 id="org020f8fb">LIB-CITRUS?</h3>
+<p>
+<i>"Chat, is this real?"</i> Universal Streaming Library
+</p>
+
+<dl>
+<dt class="fragment appear"><code>lib</code></dt><dd class="fragment appear">UNIX 계열 시스템에서 라이브러리를 나타내는 접두사</dd>
+<dt class="fragment appear">Chat, is this real?</dt><dd class="fragment appear">한국어에 "이거 진짜예요?"에 대응하는 방송인 밈으로, 실시간 소통의 중요성을 상징</dd>
+<dt class="fragment appear">Universal Streaming Library</dt><dd class="fragment appear">여러 스트리밍 플랫폼의 API를 하나의 "스트림"으로 제공하는 기능을 의미</dd>
+
+</dl>
+</section>
+<section id="slide-orgcd729fb">
+<h3 id="orgcd729fb">유사 프로젝트 및 사례</h3>
+<dl>
+<dt class="fragment appear">RevenueCat</dt><dd class="fragment appear">Google Play Store, Apple App Store 등 앱 스토어의 인 앱 결제 통합 서비스</dd>
+<dt class="fragment appear"><code>youtube-dl</code></dt><dd class="fragment appear">오픈소스 미디어 다운로드 라이브러리</dd>
+<dt class="fragment appear">AT protocol</dt><dd class="fragment appear">Bluesky 마이크로블로그 플랫폼에서 사용하는 데이터 취합 프로토콜</dd>
+
+</dl>
+</section>
+<section id="slide-org4f8940c">
+<h3 id="org4f8940c">SWOT 분석</h3>
+<dl>
+<dt class="fragment appear">Strength</dt><dd class="fragment appear">게임 개발이나 웹 개발에 사용되는 언어 모두를 하나의 라이브러리로 지원하여 DX 극대화</dd>
+<dt class="fragment appear">Weakness</dt><dd class="fragment appear">인원 수가 적어 이후 라이브러리의 유용성을 보일 데모 종류가 한정적</dd>
+<dt class="fragment appear">Opportunity</dt><dd class="fragment appear">현재 각각의 플랫폼별 라이브러리는 존재하나, 여러 플랫폼을 하나로 통합하는 라이브러리는 부재</dd>
+<dt class="fragment appear">Threat</dt><dd class="fragment appear">다운스트림 라이브러리로, 각 플랫폼이 이후에 부과할 수 있는 API 관련 제한을 조절하기 힘듦</dd>
+
+</dl>
+</section>
+<section id="slide-orgdba45bd">
+<h3 id="orgdba45bd">프로젝트 로드맵</h3>
+<ol>
+<li class="fragment appear">한국 시장에서 주로 보이는 플랫폼의 API 분석 후, 추상화 가능한 기능 추출</li>
+<li class="fragment appear">Language-agonistic specification 설계 후 구현</li>
+<li class="fragment appear">각 플랫폼별 데이터 취합 루틴 구현</li>
+<li class="fragment appear">주요 프로그래밍 언어 (TypeScript, C#, Java, Lua) 바인딩 제작</li>
+<li class="fragment appear">주요 분야별 데모 (도구, 게임, 모드) 개발</li>
+
+</ol>
+</section>
+<section id="slide-orgb49b922">
+<h3 id="orgb49b922">팀원 역할</h3>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">팀원</th>
+<th scope="col" class="org-left">역할</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">이희준</td>
+<td class="org-left">팀장, 플랫폼별 데이터 취합 로직 구현, 데모 제작</td>
+</tr>
+
+<tr>
+<td class="org-left">이주헌</td>
+<td class="org-left">공통 API 설계, 바인딩 제작</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section>
+<section id="slide-org9e19bc0">
+<h2 id="org9e19bc0">You create, we do the rest. <code>libcitrus</code>.</h2>
+<p>
+Thank you.
+</p>
+</section>
+</section>
+<section>
+<section id="slide-orge78fb0f">
+<h2 id="orge78fb0f">Q&amp;A</h2>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/highlight/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/math/math.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+overview: true,
+width: "90%",
+
+transition: 'linear',
+transitionSpeed: 'default',
+
+// Plugins with reveal.js 4.x
+plugins: [ RevealHighlight, RevealMath ],
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+]
+
+});
+</script>
+</body>
+</html>
