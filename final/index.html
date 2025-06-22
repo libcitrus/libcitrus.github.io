@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Chat, is this real?</title>
+<meta name="author" content="팀 ㅇㄱㅈㅉㅇㅇ?"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/theme/black.css" id="theme"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/highlight/zenburn.css"/>
+<style>
+.reveal { word-break: keep-all; }
+.reveal hgroup p { font-size: var(--r-heading3-size); }
+</style>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<hgroup><h1>Chat, is this real?</h1><p>Wake up babe, a universal livestream utility just dropped.</p></hgroup><p><a href="https://libcitrus.github.io/interim">https://libcitrus.github.io/interim</a>
+</section>
+<section>
+<section id="slide-org625001f">
+<h2 id="org625001f">프로젝트 개요</h2>
+<p>
+You create, we do the rest. <code>libcitrus</code>.
+</p>
+
+<p>
+파편화된 인터넷 방송 플랫폼을 유기적으로 연결하는 라이브러리
+</p>
+</section>
+<section id="slide-org95e1b99">
+<h3 id="org95e1b99">인터넷 방송의 과거</h3>
+
+<div id="org647ba82" class="figure">
+<p><img src="assets/livestreaming-market-share.png" alt="livestreaming-market-share.png" />
+</p>
+</div>
+</section>
+<section id="slide-orgd00d028">
+<h3 id="orgd00d028">인터넷 방송의 현재</h3>
+
+<div id="org299740a" class="figure">
+<p><img src="assets/livestreaming-platforms.png" alt="livestreaming-platforms.png" />
+</p>
+</div>
+</section>
+<section id="slide-orgc3e54b4">
+<h3 id="orgc3e54b4">인터넷 방송의 미래</h3>
+<p>
+최근 방송인&#x2014;시청자 사이에 새로운 소통 창구가 등장함
+</p>
+
+<ol>
+<li>AI 기술과 이를 이용한 <i>바이브 코딩</i>​의 등장</li>
+<li>프로그래밍에 관한 장벽이 낮아지면서 여러 팬 제작 컨텐츠 개발</li>
+<li>방송인도 이에 발맞춰 소통형 컨텐츠를 외주 등으로 개발</li>
+
+</ol>
+
+<p>
+<b>플랫폼의 파편화와 복잡한 API가 결국 컨텐츠 생산에 걸림돌으로 작용함</b>
+</p>
+</section>
+</section>
+<section>
+<section id="slide-org64b1cca">
+<h2 id="org64b1cca">프로젝트 성과</h2>
+<div style="display: flex;">
+<div style="flex: 1;">
+<ul>
+<li class="trans"><code>[-]</code> 라이브러리 개발
+<ul>
+<li class="on"><code>[X]</code> 공용 API 확립</li>
+<li class="trans"><code>[-]</code> 플랫폼 브릿지
+<ul>
+<li class="on"><code>[X]</code> Twitch</li>
+<li class="on"><code>[X]</code> Chzzk</li>
+<li class="off"><code>[&#xa0;]</code> YouTube</li>
+<li class="off"><code>[&#xa0;]</code> SOOP</li>
+
+</ul></li>
+<li class="trans"><code>[-]</code> 프로그래밍 언어별 라이브러리
+<ul>
+<li class="on"><code>[X]</code> Java</li>
+<li class="on"><code>[X]</code> Python</li>
+<li class="off"><code>[&#xa0;]</code> JavaScript</li>
+
+</ul></li>
+
+</ul></li>
+
+</ul>
+</div>
+
+<div style="flex: 1;">
+<ul>
+<li class="trans"><code>[-]</code> 데모 개발
+<ul>
+<li class="off"><code>[&#xa0;]</code> 시청자 선택 돌림판</li>
+<li class="on"><code>[X]</code> 기존에 존재하는 게임의 모드</li>
+<li class="off"><code>[&#xa0;]</code> 시청자 참여형 비디오 게임</li>
+
+</ul></li>
+
+</ul>
+</div>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgdb6843f">
+<h2 id="orgdb6843f">데모</h2>
+<p>
+Rockstar Games에서 개발한 AAA 오픈월드 액션 어드벤처 게임, <b>GTA 5</b>
+</p>
+
+<p>
+시청자가 투표로 결정하는 핸디캡을 받으며 미션을 해결하는 <b>Chaos Mod</b>
+</p>
+
+<p>
+Mojang에서 개발한 샌드박스 게임, Minecraft로 포팅한 <b>Entropy Mod</b>
+</p>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/highlight/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/math/math.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+overview: true,
+width: "90%",
+
+transition: 'linear',
+transitionSpeed: 'default',
+
+// Plugins with reveal.js 4.x
+plugins: [ RevealHighlight, RevealMath ],
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+]
+
+});
+</script>
+</body>
+</html>
